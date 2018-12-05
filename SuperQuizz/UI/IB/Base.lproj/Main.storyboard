@@ -19,35 +19,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="ZgX-VB-D3p">
-                                <rect key="frame" x="20" y="128.5" width="335" height="189"/>
+                                <rect key="frame" x="20" y="128.5" width="60" height="189"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qs-qK-Ezy">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Answer1">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onAnswerTapped:" destination="oLd-5T-rjQ" eventType="touchUpInside" id="7ln-OV-TnW"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWQ-Wg-bcu">
-                                        <rect key="frame" x="0.0" y="53" width="335" height="30"/>
+                                        <rect key="frame" x="0.0" y="53" width="60" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Answer2">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onAnswerTapped:" destination="oLd-5T-rjQ" eventType="touchUpInside" id="QqX-oY-jWE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FhH-iR-Pt6">
-                                        <rect key="frame" x="0.0" y="106" width="335" height="30"/>
+                                        <rect key="frame" x="0.0" y="106" width="60" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Answer3">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onAnswerTapped:" destination="oLd-5T-rjQ" eventType="touchUpInside" id="7sX-db-VAL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hxh-LC-PMn">
-                                        <rect key="frame" x="0.0" y="159" width="335" height="30"/>
+                                        <rect key="frame" x="0.0" y="159" width="60" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Answer4">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onAnswerTapped:" destination="oLd-5T-rjQ" eventType="touchUpInside" id="K2K-VW-f0H"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -93,21 +105,143 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mga-v1-zhL">
-                                <rect key="frame" x="164" y="554" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mga-v1-zhL">
+                                <rect key="frame" x="40" y="597" width="295" height="30"/>
+                                <state key="normal" title="Valider">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="userDidValidate:" destination="yHB-WU-H78" eventType="touchUpInside" id="WW4-sE-7aB"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Créer une question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6EL-wk-nSQ">
+                                <rect key="frame" x="20" y="55" width="335" height="35"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="B2s-tF-SGH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intitulé de la question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqJ-WC-1kq">
+                                <rect key="frame" x="20" y="115" width="335" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Hx0-B4-QaW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Réponses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwT-Zf-RbT">
+                                <rect key="frame" x="20" y="213" width="335" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="wzI-hX-FLn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Saisir la question" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="InF-Vu-cFF">
+                                <rect key="frame" x="20" y="158" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="e2r-IU-9yF">
+                                <rect key="frame" x="20" y="256" width="335" height="169"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="X7m-4a-6N0">
+                                        <rect key="frame" x="0.0" y="0.0" width="276" height="169"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Réponse 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i5Y-E8-Hol">
+                                                <rect key="frame" x="0.0" y="0.0" width="276" height="34"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Réponse 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tma-qw-4ab">
+                                                <rect key="frame" x="0.0" y="49" width="276" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Réponse 3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6uL-Np-hb6">
+                                                <rect key="frame" x="0.0" y="94" width="276" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Réponse 4" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cwR-8Z-Yq5">
+                                                <rect key="frame" x="0.0" y="139" width="276" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="CcM-vA-F9v">
+                                        <rect key="frame" x="286" y="0.0" width="49" height="169"/>
+                                        <subviews>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XjW-Ix-WKe">
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                <color key="onTintColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="d6a-mF-oNL">
+                                                <rect key="frame" x="0.0" y="46" width="51" height="31"/>
+                                                <color key="onTintColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BHc-DM-KbA">
+                                                <rect key="frame" x="0.0" y="92" width="51" height="31"/>
+                                                <color key="onTintColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GYm-LC-wXO">
+                                                <rect key="frame" x="0.0" y="138" width="51" height="31"/>
+                                                <color key="onTintColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="e2r-IU-9yF" firstAttribute="leading" secondItem="lCU-FM-NEa" secondAttribute="leading" constant="20" id="1Bv-tJ-vF1"/>
+                            <constraint firstItem="lCU-FM-NEa" firstAttribute="trailing" secondItem="cwT-Zf-RbT" secondAttribute="trailing" constant="20" id="60I-Da-WUd"/>
+                            <constraint firstItem="cwT-Zf-RbT" firstAttribute="leading" secondItem="lCU-FM-NEa" secondAttribute="leading" constant="20" id="MOT-ct-0Pb"/>
+                            <constraint firstItem="6EL-wk-nSQ" firstAttribute="top" secondItem="lCU-FM-NEa" secondAttribute="top" constant="35" id="O9E-Nu-BMQ"/>
+                            <constraint firstItem="e2r-IU-9yF" firstAttribute="top" secondItem="cwT-Zf-RbT" secondAttribute="bottom" constant="8" id="OLK-cY-aPE"/>
+                            <constraint firstItem="6EL-wk-nSQ" firstAttribute="leading" secondItem="lCU-FM-NEa" secondAttribute="leading" constant="20" id="Q9U-zb-yXT"/>
+                            <constraint firstItem="lCU-FM-NEa" firstAttribute="trailing" secondItem="6EL-wk-nSQ" secondAttribute="trailing" constant="20" id="RBT-aC-idA"/>
+                            <constraint firstItem="lCU-FM-NEa" firstAttribute="trailing" secondItem="vqJ-WC-1kq" secondAttribute="trailing" constant="20" id="Wiy-Te-haR"/>
+                            <constraint firstItem="InF-Vu-cFF" firstAttribute="leading" secondItem="lCU-FM-NEa" secondAttribute="leading" constant="20" id="bmE-6r-qJf"/>
+                            <constraint firstItem="lCU-FM-NEa" firstAttribute="trailing" secondItem="Mga-v1-zhL" secondAttribute="trailing" constant="40" id="cXv-Lo-4TE"/>
+                            <constraint firstItem="lCU-FM-NEa" firstAttribute="bottom" secondItem="Mga-v1-zhL" secondAttribute="bottom" constant="40" id="doS-Dl-OmM"/>
+                            <constraint firstItem="InF-Vu-cFF" firstAttribute="top" secondItem="vqJ-WC-1kq" secondAttribute="bottom" constant="8" id="gVA-lC-AHT"/>
+                            <constraint firstItem="vqJ-WC-1kq" firstAttribute="top" secondItem="6EL-wk-nSQ" secondAttribute="bottom" constant="25" id="h5f-Hv-bJj"/>
+                            <constraint firstItem="vqJ-WC-1kq" firstAttribute="leading" secondItem="lCU-FM-NEa" secondAttribute="leading" constant="20" id="ljF-H4-dz3"/>
+                            <constraint firstItem="Mga-v1-zhL" firstAttribute="leading" secondItem="lCU-FM-NEa" secondAttribute="leading" constant="40" id="mLC-rq-nVQ"/>
+                            <constraint firstItem="lCU-FM-NEa" firstAttribute="trailing" secondItem="InF-Vu-cFF" secondAttribute="trailing" constant="20" id="sfI-6M-3a7"/>
+                            <constraint firstItem="cwT-Zf-RbT" firstAttribute="top" secondItem="InF-Vu-cFF" secondAttribute="bottom" constant="25" id="vYe-4X-d2u"/>
+                            <constraint firstItem="lCU-FM-NEa" firstAttribute="trailing" secondItem="e2r-IU-9yF" secondAttribute="trailing" constant="20" id="yh8-gF-kQK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lCU-FM-NEa"/>
                     </view>
                     <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="answerSwitch1" destination="XjW-Ix-WKe" id="h4u-Px-1P8"/>
+                        <outlet property="answerTextField1" destination="i5Y-E8-Hol" id="Tlb-Cc-FQb"/>
+                        <outlet property="answerTextField2" destination="tma-qw-4ab" id="g37-5B-Hyf"/>
+                        <outlet property="answerTextField3" destination="6uL-Np-hb6" id="wYK-7p-5Oc"/>
+                        <outlet property="answerTextField4" destination="cwR-8Z-Yq5" id="fkm-dh-uDa"/>
+                        <outlet property="questionTitleTextField" destination="InF-Vu-cFF" id="x88-gA-Hjy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kkf-LP-Bhd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="950" y="-403"/>
+            <point key="canvasLocation" x="761" y="-678"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="Khe-U3-jLH">

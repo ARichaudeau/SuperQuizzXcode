@@ -128,7 +128,10 @@ extension QuestionsTableViewController : CreateOrEditQuestionDelegate {
     }
     
     func userDidCreateQuestion(q: Question) {
-        // TODO:  creer la  question
+        // ajouter la question aux questions presentes
+        questions.append(q)
+        //rafraichir ma liste
+        tableView.reloadData()
         self.presentedViewController?.dismiss(animated: true, completion: nil)
     }
 }

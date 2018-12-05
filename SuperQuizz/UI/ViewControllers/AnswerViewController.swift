@@ -32,9 +32,16 @@ class AnswerViewController: UIViewController {
         uiButtonAnswer2.setTitle(question.answers[1], for: .normal)
         uiButtonAnswer3.setTitle(question.answers[2], for: .normal)
         uiButtonAnswer4.setTitle(question.answers[3], for: .normal)
-    
-        
     }
+    
+    @IBAction func onAnswerTapped(_ sender: UIButton) {
+        if sender.titleLabel?.text == question.correctAnswer{
+            print("Bravo, c'est la bonne réponse !")
+        } else {
+            print("Mauvaise réponse !")
+        }
+    }
+    
     
     func setOnReponseAnswered(closure : @escaping (_ question: Question,_ isCorrectAnswer :Bool)->()) {
         onQuestionAnswered = closure
@@ -46,6 +53,6 @@ class AnswerViewController: UIViewController {
         onQuestionAnswered?(question, isCorrectAnswer)
     }
 
-
 }
+
 
