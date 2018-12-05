@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D48A265A21B7CF65009CDF8A /* CreateOrEditQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48A265921B7CF65009CDF8A /* CreateOrEditQuestionViewController.swift */; };
 		D493F8B721B6B5CB0031C95D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D493F8B621B6B5CB0031C95D /* AppDelegate.swift */; };
-		D493F8B921B6B5CB0031C95D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D493F8B821B6B5CB0031C95D /* ViewController.swift */; };
+		D493F8B921B6B5CB0031C95D /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D493F8B821B6B5CB0031C95D /* AnswerViewController.swift */; };
 		D493F8BC21B6B5CB0031C95D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D493F8BA21B6B5CB0031C95D /* Main.storyboard */; };
 		D493F8BE21B6B5CD0031C95D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D493F8BD21B6B5CD0031C95D /* Assets.xcassets */; };
 		D493F8C121B6B5CD0031C95D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D493F8BF21B6B5CD0031C95D /* LaunchScreen.storyboard */; };
 		D493F8CC21B6B5CD0031C95D /* SuperQuizzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D493F8CB21B6B5CD0031C95D /* SuperQuizzTests.swift */; };
 		D493F8D721B6B5CD0031C95D /* SuperQuizzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D493F8D621B6B5CD0031C95D /* SuperQuizzUITests.swift */; };
+		D493F8E521B6B76C0031C95D /* QuestionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D493F8E421B6B76C0031C95D /* QuestionsTableViewController.swift */; };
+		D493F8E821B6C1010031C95D /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D493F8E621B6C1010031C95D /* QuestionTableViewCell.swift */; };
+		D493F8E921B6C1010031C95D /* QuestionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D493F8E721B6C1010031C95D /* QuestionTableViewCell.xib */; };
+		D493F8EB21B6C6080031C95D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D493F8EA21B6C6080031C95D /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D48A265921B7CF65009CDF8A /* CreateOrEditQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrEditQuestionViewController.swift; sourceTree = "<group>"; };
 		D493F8B321B6B5CB0031C95D /* SuperQuizz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperQuizz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D493F8B621B6B5CB0031C95D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D493F8B821B6B5CB0031C95D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D493F8B821B6B5CB0031C95D /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
 		D493F8BB21B6B5CB0031C95D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D493F8BD21B6B5CD0031C95D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D493F8C021B6B5CD0031C95D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +53,10 @@
 		D493F8D221B6B5CD0031C95D /* SuperQuizzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperQuizzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D493F8D621B6B5CD0031C95D /* SuperQuizzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperQuizzUITests.swift; sourceTree = "<group>"; };
 		D493F8D821B6B5CD0031C95D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D493F8E421B6B76C0031C95D /* QuestionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsTableViewController.swift; sourceTree = "<group>"; };
+		D493F8E621B6C1010031C95D /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
+		D493F8E721B6C1010031C95D /* QuestionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionTableViewCell.xib; sourceTree = "<group>"; };
+		D493F8EA21B6C6080031C95D /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D48A265B21B7CF88009CDF8A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D48A265E21B7CFA9009CDF8A /* ViewControllers */,
+				D48A265D21B7CFA1009CDF8A /* Cells */,
+				D48A265C21B7CF96009CDF8A /* IB */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D48A265C21B7CF96009CDF8A /* IB */ = {
+			isa = PBXGroup;
+			children = (
+				D493F8BF21B6B5CD0031C95D /* LaunchScreen.storyboard */,
+				D493F8BA21B6B5CB0031C95D /* Main.storyboard */,
+				D493F8E721B6C1010031C95D /* QuestionTableViewCell.xib */,
+			);
+			path = IB;
+			sourceTree = "<group>";
+		};
+		D48A265D21B7CFA1009CDF8A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D493F8E621B6C1010031C95D /* QuestionTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D48A265E21B7CFA9009CDF8A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D493F8B821B6B5CB0031C95D /* AnswerViewController.swift */,
+				D493F8E421B6B76C0031C95D /* QuestionsTableViewController.swift */,
+				D48A265921B7CF65009CDF8A /* CreateOrEditQuestionViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D48A265F21B7CFC3009CDF8A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D493F8EA21B6C6080031C95D /* Question.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D493F8AA21B6B5CB0031C95D = {
 			isa = PBXGroup;
 			children = (
@@ -98,10 +154,9 @@
 			isa = PBXGroup;
 			children = (
 				D493F8B621B6B5CB0031C95D /* AppDelegate.swift */,
-				D493F8B821B6B5CB0031C95D /* ViewController.swift */,
-				D493F8BA21B6B5CB0031C95D /* Main.storyboard */,
+				D48A265F21B7CFC3009CDF8A /* Model */,
+				D48A265B21B7CF88009CDF8A /* UI */,
 				D493F8BD21B6B5CD0031C95D /* Assets.xcassets */,
-				D493F8BF21B6B5CD0031C95D /* LaunchScreen.storyboard */,
 				D493F8C221B6B5CD0031C95D /* Info.plist */,
 			);
 			path = SuperQuizz;
@@ -230,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D493F8C121B6B5CD0031C95D /* LaunchScreen.storyboard in Resources */,
+				D493F8E921B6C1010031C95D /* QuestionTableViewCell.xib in Resources */,
 				D493F8BE21B6B5CD0031C95D /* Assets.xcassets in Resources */,
 				D493F8BC21B6B5CB0031C95D /* Main.storyboard in Resources */,
 			);
@@ -256,8 +312,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D493F8B921B6B5CB0031C95D /* ViewController.swift in Sources */,
+				D493F8EB21B6C6080031C95D /* Question.swift in Sources */,
+				D493F8B921B6B5CB0031C95D /* AnswerViewController.swift in Sources */,
+				D493F8E821B6C1010031C95D /* QuestionTableViewCell.swift in Sources */,
+				D493F8E521B6B76C0031C95D /* QuestionsTableViewController.swift in Sources */,
 				D493F8B721B6B5CB0031C95D /* AppDelegate.swift in Sources */,
+				D48A265A21B7CF65009CDF8A /* CreateOrEditQuestionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
