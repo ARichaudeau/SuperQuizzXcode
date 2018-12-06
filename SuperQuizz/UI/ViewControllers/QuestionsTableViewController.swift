@@ -29,6 +29,22 @@ class QuestionsTableViewController: UITableViewController {
         tableView.register(UINib(nibName: "QuestionTableViewCell", bundle: nil), forCellReuseIdentifier: "QuestionTableViewCell")
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        APIClient.instance.getAllQuestionsFromServer(onSuccess: { (questionsFromServer) in
+            print("Succes")
+            self.questions = questionsFromServer
+            DispatchQueue.main.async {
+            self.tableView.reloadData()
+            }
+        }) { (error) in
+            print("Erreur")
+        }
+        
+
+
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -55,7 +71,7 @@ class QuestionsTableViewController: UITableViewController {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AnswerViewController") as! AnswerViewController
         vc.question = questions[indexPath.row]
         vc.setOnReponseAnswered { (questionAnswered, result) in
-            vc.dismiss(animated: true, completion: nil)
+            self.navigationController?.popViewController(animated: true)
             self.tableView.reloadData()
         }
     
@@ -71,6 +87,22 @@ class QuestionsTableViewController: UITableViewController {
     }
     
 
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        let editAction = UITableViewRowAction(style: .normal, title: "Edit") { (action, indexpath) in
+            //TODO: edit question
+            let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CreateOrEditQuestionViewController") as! CreateOrEditQuestionViewController
+            controller.delegate = self
+            //controller.questionToEdit
+            self.present(controller, animated: true, completion: nil)
+            
+        }
+        
+        let deleteAction = UITableViewRowAction(style: .destructive, title: "delete") { (action, indexpath) in
+            //TODO: delete question
+        }
+        return [editAction,deleteAction]
+    }
     
     
 

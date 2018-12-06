@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="ZgX-VB-D3p">
-                                <rect key="frame" x="20" y="128.5" width="60" height="189"/>
+                                <rect key="frame" x="20" y="128.5" width="335" height="189"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qs-qK-Ezy">
-                                        <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Answer1">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -32,7 +32,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWQ-Wg-bcu">
-                                        <rect key="frame" x="0.0" y="53" width="60" height="30"/>
+                                        <rect key="frame" x="0.0" y="53" width="335" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Answer2">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -42,7 +42,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FhH-iR-Pt6">
-                                        <rect key="frame" x="0.0" y="106" width="60" height="30"/>
+                                        <rect key="frame" x="0.0" y="106" width="335" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Answer3">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -52,7 +52,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hxh-LC-PMn">
-                                        <rect key="frame" x="0.0" y="159" width="60" height="30"/>
+                                        <rect key="frame" x="0.0" y="159" width="335" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Answer4">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -73,11 +73,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="S6d-Dp-h7t">
+                                <rect key="frame" x="36" y="377.5" width="303" height="2"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="S6d-Dp-h7t" firstAttribute="leading" secondItem="Luc-bX-IG9" secondAttribute="leadingMargin" constant="20" id="0mx-lz-WRo"/>
                             <constraint firstItem="ZgX-VB-D3p" firstAttribute="leading" secondItem="FIm-DF-PQw" secondAttribute="leading" constant="20" id="8Gi-1y-OrG"/>
                             <constraint firstItem="ZgX-VB-D3p" firstAttribute="top" secondItem="TmA-I5-Nrl" secondAttribute="bottom" constant="70" id="D2e-7g-qHq"/>
+                            <constraint firstItem="S6d-Dp-h7t" firstAttribute="top" secondItem="ZgX-VB-D3p" secondAttribute="bottom" constant="60" id="IoT-Ut-ea6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="S6d-Dp-h7t" secondAttribute="trailing" constant="20" id="RC9-Nt-Sgd"/>
                             <constraint firstItem="FIm-DF-PQw" firstAttribute="trailing" secondItem="ZgX-VB-D3p" secondAttribute="trailing" constant="20" id="SPX-2v-v8L"/>
                             <constraint firstItem="TmA-I5-Nrl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FIm-DF-PQw" secondAttribute="leading" symbolic="YES" id="V6F-q0-ttN"/>
                             <constraint firstItem="TmA-I5-Nrl" firstAttribute="top" secondItem="FIm-DF-PQw" secondAttribute="top" constant="18" id="hSb-TQ-Lyh"/>
@@ -86,6 +92,7 @@
                         <viewLayoutGuide key="safeArea" id="FIm-DF-PQw"/>
                     </view>
                     <connections>
+                        <outlet property="uiAnswerProgressView" destination="S6d-Dp-h7t" id="sEL-8j-TIa"/>
                         <outlet property="uiButtonAnswer1" destination="0Qs-qK-Ezy" id="xXm-x2-XvM"/>
                         <outlet property="uiButtonAnswer2" destination="vWQ-Wg-bcu" id="qHU-ka-JjB"/>
                         <outlet property="uiButtonAnswer3" destination="FhH-iR-Pt6" id="92w-cd-lMv"/>

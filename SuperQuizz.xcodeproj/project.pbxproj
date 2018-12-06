@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D48A265A21B7CF65009CDF8A /* CreateOrEditQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48A265921B7CF65009CDF8A /* CreateOrEditQuestionViewController.swift */; };
+		D48EFE1821B9373F00836745 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EFE1721B9373F00836745 /* APIClient.swift */; };
 		D493F8B721B6B5CB0031C95D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D493F8B621B6B5CB0031C95D /* AppDelegate.swift */; };
 		D493F8B921B6B5CB0031C95D /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D493F8B821B6B5CB0031C95D /* AnswerViewController.swift */; };
 		D493F8BC21B6B5CB0031C95D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D493F8BA21B6B5CB0031C95D /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		D48A265921B7CF65009CDF8A /* CreateOrEditQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrEditQuestionViewController.swift; sourceTree = "<group>"; };
+		D48EFE1721B9373F00836745 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		D493F8B321B6B5CB0031C95D /* SuperQuizz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperQuizz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D493F8B621B6B5CB0031C95D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D493F8B821B6B5CB0031C95D /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				D493F8B621B6B5CB0031C95D /* AppDelegate.swift */,
+				D48EFE1721B9373F00836745 /* APIClient.swift */,
 				D48A265F21B7CFC3009CDF8A /* Model */,
 				D48A265B21B7CF88009CDF8A /* UI */,
 				D493F8BD21B6B5CD0031C95D /* Assets.xcassets */,
@@ -313,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D493F8EB21B6C6080031C95D /* Question.swift in Sources */,
+				D48EFE1821B9373F00836745 /* APIClient.swift in Sources */,
 				D493F8B921B6B5CB0031C95D /* AnswerViewController.swift in Sources */,
 				D493F8E821B6C1010031C95D /* QuestionTableViewCell.swift in Sources */,
 				D493F8E521B6B76C0031C95D /* QuestionsTableViewController.swift in Sources */,
