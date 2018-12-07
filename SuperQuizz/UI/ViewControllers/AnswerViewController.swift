@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import SwiftIcons
 
 class AnswerViewController: UIViewController {
 
+    
     
     @IBOutlet weak var uiLabelQuestionTitle: UILabel!
     
@@ -37,6 +39,7 @@ class AnswerViewController: UIViewController {
         uiButtonAnswer2.setTitle(question.answers[1], for: .normal)
         uiButtonAnswer3.setTitle(question.answers[2], for: .normal)
         uiButtonAnswer4.setTitle(question.answers[3], for: .normal)
+    
         
         DispatchQueue.global(qos: .userInitiated).async {
             

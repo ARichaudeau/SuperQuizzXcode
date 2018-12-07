@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftIcons
 
 protocol CreateOrEditQuestionDelegate : AnyObject {
     func userDidEditQuestion(q : Question) -> ()
@@ -18,6 +19,7 @@ class CreateOrEditQuestionViewController: UIViewController {
     var questionToEdit: Question?
     weak var delegate : CreateOrEditQuestionDelegate?
     
+    @IBOutlet weak var uiButtonValidate: UIButton!
     @IBOutlet weak var answerTextField1: UITextField!
     @IBOutlet weak var answerTextField2: UITextField!
     @IBOutlet weak var answerTextField3: UITextField!
@@ -29,6 +31,7 @@ class CreateOrEditQuestionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        uiButtonValidate.setIcon(icon: .fontAwesomeSolid(.angleRight), iconSize: 70, forState: .normal)
         // Do any additional setup after loading the view.
     }
     
